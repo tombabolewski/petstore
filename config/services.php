@@ -31,4 +31,11 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
 
+    // Petstore API
+    'petstore' => [
+        'url' => env('PETSTORE_URL'),
+        'token' => env('PETSTORE_TOKEN'),
+        'timeout' => env('PETSTORE_TIMEOUT', 10),
+        'connect_timeout' => env('PETSTORE_CONNECT_TIMEOUT', 2),
+    ],
 ];
