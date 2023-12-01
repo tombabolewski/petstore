@@ -25,4 +25,38 @@ class PetUpdateRequest extends FormRequest
             'status' => ['string', Rule::in(PetStatus::all())],
         ];
     }
+
+    public function bodyParameters(): array
+    {
+        return [
+            'category' => [
+                'description' => 'Category name',
+                'example' => 'Mammal',
+            ],
+            'name' => [
+                'description' => 'Pet name',
+                'example' => 'Doggie',
+            ],
+            'photoUrls' => [
+                'description' => 'List of photo URLs',
+                'example' => '["https://www.example.com/doggie.jpg"]',
+            ],
+            'photoUrls.*' => [
+                'description' => 'Photo URL',
+                'example' => 'https://www.example.com/doggie.jpg',
+            ],
+            'tags' => [
+                'description' => 'List of tags',
+                'example' => '["foo", "bar"]',
+            ],
+            'tags.*' => [
+                'description' => 'Tag name',
+                'example' => 'foo',
+            ],
+            'status' => [
+                'description' => 'Pet status',
+                'example' => 'available',
+            ],
+        ];
+    }
 }

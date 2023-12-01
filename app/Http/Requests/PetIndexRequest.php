@@ -20,4 +20,18 @@ class PetIndexRequest extends FormRequest
             'status.*' => [Rule::enum(PetStatus::class)],
         ];
     }
+
+    public function bodyParameters(): array
+    {
+        return [
+            'status' => [
+                'description' => 'Array of Pet statuses to filter by',
+                'example' => '["available", "pending"]',
+            ],
+            'status.*' => [
+                'description' => 'Pet status in the store',
+                'example' => 'available',
+            ],
+        ];
+    }
 }

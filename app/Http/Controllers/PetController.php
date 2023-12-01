@@ -16,7 +16,11 @@ class PetController extends Controller
     }
 
     /**
+     * Index Pets
+     *
      * Display all pets, optionally filtered by status
+     *
+     * @response 422 scenario="Invalid status value" {"message": "API returned an Invalid Status Value error. Please contact the administrator."}
      */
     public function index(PetIndexRequest $request): JsonResponse
     {
@@ -27,7 +31,11 @@ class PetController extends Controller
     }
 
     /**
+     * Store Pet
+     *
      * Store a new pet
+     *
+     * @response 422 scenario="Invalid Input" {"message": "API returned an Invalid Input error. Please correct the provided data and try again."}
      */
     public function store(PetStoreRequest $request): JsonResponse
     {
@@ -40,7 +48,11 @@ class PetController extends Controller
     }
 
     /**
+     * Upload Pet Image
+     *
      * Upload an image for a specific pet
+     *
+     * @urlParam id int required The ID of the pet to upload an image for.
      */
     public function uploadImage(PetUploadImageRequest $request, string $id): JsonResponse
     {
@@ -53,7 +65,14 @@ class PetController extends Controller
     }
 
     /**
+     * Show Pet
+     *
      * Display the information about a specific pet
+     *
+     * @urlParam id int required The ID of the pet to retrieve.
+     *
+     * @response 422 scenario="Invalid ID" {"message": "API returned an Invalid ID error. Please contact the administrator."}
+     * @response 404 scenario="Pet not found" {"message": "Pet not found."}
      */
     public function show(string $id): JsonResponse
     {
@@ -62,11 +81,19 @@ class PetController extends Controller
     }
 
     /**
-     * Update a specific pet
+     * Update Pet
+     *
+     * Update a specific pet.
+     * Note: Full payload must be provided for both PUT and PATCH methods as they work exactly the same
+     *
+     * @urlParam id int required The ID of the pet to update.
+     *
+     * @response 404 scenario="Pet not found" {"message": "Pet not found."}
+     * @response 422 scenario="Invalid ID" {"message": "API returned an Invalid ID error. Please contact the administrator."}
+     * @response 422 scenario="Validation Error" {"message": "API returned a Validation error. Please correct your input and try again."}
      */
     public function update(PetUpdateRequest $request, string $id): JsonResponse
     {
-        dd($request->all(), $request->validated());
         $payload = $request->validated();
         $pet = $this->petService->put((int)$id, $payload);
         return response()->json([
@@ -76,7 +103,11 @@ class PetController extends Controller
     }
 
     /**
+     * Destroy Pet
+     *
      * Remove a specific pet
+     *
+     * @urlParam id int required The ID of the pet to delete.
      */
     public function destroy(string $id): JsonResponse
     {

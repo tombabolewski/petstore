@@ -8,6 +8,8 @@ use Illuminate\Http\JsonResponse;
 class PetStatusController extends Controller
 {
     /**
+     * Index PetStatuses
+     *
      * Get all available statuses
      */
     public function index(): JsonResponse

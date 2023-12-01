@@ -17,4 +17,13 @@ class PetUploadImageRequest extends FormRequest
             'file' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         ];
     }
+
+    public function bodyParameters(): array
+    {
+        return [
+            'file' => [
+                'description' => 'Image file to upload, sent over multipart/form-data',
+            ],
+        ];
+    }
 }
