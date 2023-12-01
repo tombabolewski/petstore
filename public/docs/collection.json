@@ -1,0 +1,402 @@
+{
+    "variable": [
+        {
+            "id": "baseUrl",
+            "key": "baseUrl",
+            "type": "string",
+            "name": "string",
+            "value": "http:\/\/127.0.0.1:8000"
+        }
+    ],
+    "info": {
+        "name": "Petstore Client API Documentation",
+        "_postman_id": "9b3934b0-de74-4243-b02b-6f44409cf75c",
+        "description": "A short description of Petstore Client API",
+        "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.1.0\/collection.json"
+    },
+    "item": [
+        {
+            "name": "Endpoints",
+            "description": "",
+            "item": [
+                {
+                    "name": "Index Pets",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/pet",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/pet"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"status\":[\"available\"]}"
+                        },
+                        "description": "Display all pets, optionally filtered by status",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "x-ratelimit-limit",
+                                    "value": "60"
+                                },
+                                {
+                                    "key": "x-ratelimit-remaining",
+                                    "value": "59"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 200,
+                            "body": "{\"data\":[{\"id\":9223372016900043600,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"fish\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":1234,\"category\":{\"id\":1234,\"name\":\"Perri\"},\"name\":\"Perri\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":1234,\"name\":\"Perri\"}],\"status\":\"available\"},{\"id\":9223372016900043611,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"doggie\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900043617,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"fish\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900043621,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"doggie\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900043622,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"doggie\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900043624,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"doggie\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900043625,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"doggie\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":2,\"category\":{\"id\":2,\"name\":\"string\"},\"name\":\"PerroSanxe\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900043626,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"doggie\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900043628,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"doggie\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900043631,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"doggie\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900043632,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"fish\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900043633,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"fish\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900043634,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"doggie\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":90210,\"category\":{\"id\":1,\"name\":\"Rotwiller\"},\"name\":\"Tommy\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900043641,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"doggie\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900043644,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"Puff\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900043645,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"doggie\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":123,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"DogApi12\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900043650,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"doggie\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900043651,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"doggie\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900043653,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"doggie\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900043654,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"doggie\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900043655,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"doggie\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900043657,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"doggie\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900043660,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"doggie\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900043671,\"category\":{\"id\":0,\"name\":\"puppy\"},\"name\":\"doggie\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"Charlie\"}],\"status\":\"available\"},{\"id\":9223372016900043672,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"fish\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900043673,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"fish\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900043674,\"name\":\"siyaan\",\"photoUrls\":[],\"tags\":[],\"status\":\"available\"},{\"id\":9223372016900043680,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"VVTLGBEHLM\",\"photoUrls\":[\"string\"],\"tags\":[],\"status\":\"available\"},{\"id\":9223372016900043685,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"doggie\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900043688,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"DogApi12\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900043692,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"DogApi12\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900043694,\"category\":{\"id\":0,\"name\":\"puppy\"},\"name\":\"doggie\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"Charlie\"}],\"status\":\"available\"},{\"id\":9223372016900043697,\"name\":\"siyaan\",\"photoUrls\":[],\"tags\":[],\"status\":\"available\"},{\"id\":9223372016900043700,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"fish\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900043701,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"doggie\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9222968140491042131,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"doggie\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900043702,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"fish\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900043705,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"Puff\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900043706,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"doggie\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900043707,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"doggie\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900043715,\"name\":\"doggie\",\"photoUrls\":[\"string\"],\"tags\":[],\"status\":\"available\"},{\"id\":9223372016900043716,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"fish\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900043718,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"doggie\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900043719,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"doggie\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900043723,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"test\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900043724,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"test\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900043725,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"test\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900043726,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"doggie\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":55,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"harsisin\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900043728,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"doggie\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900043729,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"doggie\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900043730,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"doggie\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900043731,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"fish\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900043733,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"doggie\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900043735,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"doggie\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900043738,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"DogApi12\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900043741,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"test\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900043744,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"fish\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":17,\"category\":{\"id\":18,\"name\":\"cat\"},\"name\":\"Eva\",\"photoUrls\":[\"12345\"],\"tags\":[{\"id\":19,\"name\":\"pets\"}],\"status\":\"available\"},{\"id\":9223372016900043750,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"fish\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900043751,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"fish\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900043754,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"Puff\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900043755,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"doggie\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900043756,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"doggie\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900043763,\"category\":{\"id\":0,\"name\":\"puppy\"},\"name\":\"doggie\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"Charlie\"}],\"status\":\"available\"},{\"id\":9223372016900043764,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"Dinamita\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900043765,\"name\":\"siyaan\",\"photoUrls\":[],\"tags\":[],\"status\":\"available\"},{\"id\":9223372016900043767,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"fish\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900043771,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"fish\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900043772,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"fish\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900043774,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"fish\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900043781,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"doggie\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":112,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"doggie\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900043788,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"fish\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900043789,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"fish\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900043806,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"Puff\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900043813,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"doggie\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900043814,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"doggie\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":128,\"category\":{\"id\":0,\"name\":\"Horse\"},\"name\":\"Ahal-Teke\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":3064713254522577,\"name\":\"\\u041b\\u0435\\u0442\\u0435\\u0442\\u044c \\u0426\\u0432\\u0435\\u0442\",\"photoUrls\":[\"https:\\\/\\\/img.freepik.com\\\/free-photo\\\/also.jpg\",\"https:\\\/\\\/img.freepik.com\\\/free-photo\\\/occur.jpg\"],\"tags\":[],\"status\":\"available\"},{\"id\":9223372016900043817,\"category\":{\"id\":0,\"name\":\"Pomeranian\"},\"name\":\"Yeontn\",\"photoUrls\":[\"https:\\\/\\\/www.google.com\\\/url?sa=i&url=https%3A%2F%2Fwikibio.in%2Fyeontan%2F&psig=AOvVaw0UdJeOGlk-jKSOtT-nplW1&ust=1682581409377000&source=images&cd=vfe&ved=0CA4QjRxqFwoTCMCQvJiuyP4CFQAAAAAdAAAAABAI\"],\"tags\":[{\"id\":0,\"name\":\"Dog\"}],\"status\":\"available\"},{\"id\":9223372016900043818,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"fish\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":420,\"category\":{\"id\":42,\"name\":\"Chihuahua\"},\"name\":\"PasBre\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900043823,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"morce\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900043824,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"cat\",\"photoUrls\":[\"https:\\\/\\\/klike.net\\\/uploads\\\/posts\\\/2023-01\\\/1675061232_3-62.jpg\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900043828,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"fish\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900043831,\"name\":\"Kitty\",\"photoUrls\":[],\"tags\":[],\"status\":\"available\"},{\"id\":400,\"name\":\"mimascota\",\"photoUrls\":[],\"tags\":[],\"status\":\"available\"},{\"id\":9223372016900043845,\"name\":\"Kitty\",\"photoUrls\":[],\"tags\":[],\"status\":\"available\"},{\"id\":9223372016900043846,\"category\":{\"id\":-74696456,\"name\":\"culpa fugiat veniam cupidatat sint\"},\"name\":\"doggie\",\"photoUrls\":[\"culpa commodo\",\"Lorem in veniam qui\"],\"tags\":[{\"id\":-28973829,\"name\":\"cillum eu ad adipisicing do\"},{\"id\":-12934735,\"name\":\"est do sint Ut sunt\"}],\"status\":\"available\"},{\"id\":9223372016900043853,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"doggie\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900043856,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"fish\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900043859,\"category\":{\"id\":0,\"name\":\"puppy\"},\"name\":\"doggie\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"Charlie\"}],\"status\":\"available\"},{\"id\":9223372016900043861,\"name\":\"siyaan\",\"photoUrls\":[],\"tags\":[],\"status\":\"available\"},{\"id\":9223372016900043864,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"fish\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900043871,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"fish\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900043872,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"Puff\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900043875,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"doggie\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900043876,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"doggie\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":5489,\"category\":{\"id\":1,\"name\":\"Cat\"},\"name\":\"Missi\",\"photoUrls\":[],\"tags\":[{\"id\":35,\"name\":\"British cat\"}],\"status\":\"available\"},{\"id\":9223372016900043879,\"category\":{\"id\":152972,\"name\":\"UnwindingIllimitableWalkes\"},\"name\":\"WeaknessesAminadabVnreall\",\"photoUrls\":[\"CrammedSympathiseSwimme\"],\"tags\":[{\"id\":0}],\"status\":\"available\"},{\"id\":9223372016900043880,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"doggie\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900043881,\"name\":\"test pet new\",\"photoUrls\":[\"string\"],\"tags\":[],\"status\":\"available\"},{\"id\":9223372016900043884,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"fish\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900043885,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"fish\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900043888,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"fish\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900043892,\"name\":\"Kitty\",\"photoUrls\":[],\"tags\":[],\"status\":\"available\"},{\"id\":9223372016900043901,\"name\":\"test pet name\",\"photoUrls\":[null],\"tags\":[],\"status\":\"available\"},{\"id\":9223372016900043902,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"doggie\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900043916,\"name\":\"Kitty\",\"photoUrls\":[],\"tags\":[],\"status\":\"available\"},{\"id\":9223372016900043917,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"doggie\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900043918,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"fish\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900043919,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"fish\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900043921,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"Puff\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900043923,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"doggie\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900043924,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"doggie\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900043929,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"fish\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900043932,\"name\":\"test pet name\",\"photoUrls\":[null],\"tags\":[],\"status\":\"available\"},{\"id\":99996,\"name\":\"doggie_by_ms\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900043933,\"name\":\"Kitty\",\"photoUrls\":[],\"tags\":[],\"status\":\"available\"},{\"id\":9223372016900043934,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"fish\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900043937,\"name\":\"Kitty\",\"photoUrls\":[],\"tags\":[],\"status\":\"available\"},{\"id\":12121,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"TestPetName\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900043973,\"category\":{\"id\":9223372016900043229,\"name\":\"FezOnesNeyther\"},\"name\":\"ComplainingWantonnessDooming\",\"photoUrls\":[\"NoiselesslySeductiveAssayed\"],\"tags\":[{\"id\":0}],\"status\":\"available\"},{\"id\":112233,\"category\":{\"id\":30,\"name\":\"Eq-dog\"},\"name\":\"Postman\",\"photoUrls\":[\"URLLink\"],\"tags\":[{\"id\":10,\"name\":\"Doberman\"}],\"status\":\"available\"},{\"id\":9223372016900043991,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"fish\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900042000,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"doggie\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900043994,\"name\":\"Kitty\",\"photoUrls\":[],\"tags\":[],\"status\":\"available\"},{\"id\":9223372016900043995,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"fish\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900043997,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"fish\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900043998,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"Puff\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900043999,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"doggie\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900044000,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"doggie\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900044001,\"name\":\"Kitty\",\"photoUrls\":[],\"tags\":[],\"status\":\"available\"},{\"id\":9223372016900044002,\"name\":\"Kitty\",\"photoUrls\":[],\"tags\":[],\"status\":\"available\"},{\"id\":9223372016900044014,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"fish\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900044015,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"fish\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900044016,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"fish\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900044028,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"doggie\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900044032,\"name\":\"Pet_1701440336860\",\"photoUrls\":[],\"tags\":[],\"status\":\"available\"},{\"id\":9223372016900044033,\"category\":{\"id\":9223372016900043222,\"name\":\"AlacrityRianGoblins\"},\"name\":\"doggie\",\"photoUrls\":[\"DalilahDondraUnfumed\"],\"tags\":[{\"id\":0}],\"status\":\"available\"},{\"id\":9223372016900044047,\"category\":{\"id\":9223372016900043222,\"name\":\"RevealedUndrawingReconnoitre\"},\"name\":\"UntrodSatiatedEschew\",\"photoUrls\":[\"CarolineAbridgIntertwined\"],\"tags\":[{\"id\":0}],\"status\":\"available\"},{\"id\":9223372016900044050,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"fish\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900044051,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"fish\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900044052,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"doggie\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":1245,\"category\":{\"id\":1245,\"name\":\"xyz\"},\"name\":\"xyz\",\"photoUrls\":[\"test\"],\"tags\":[],\"status\":\"available\"},{\"id\":9223372016900044055,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"Puff\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900044056,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"doggie\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900044057,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"doggie\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900044058,\"category\":{\"id\":455,\"name\":\"ConundrumsRemonstranceRue\"},\"name\":\"LuciditySophisticatedDeere\",\"photoUrls\":[\"StridesBelievestElks\"],\"tags\":[{\"id\":0}],\"status\":\"available\"},{\"id\":9223372016900044061,\"category\":{\"id\":9488702638732389,\"name\":\"EverydayishCogentTheresa\"},\"name\":\"SkeinIgnitedSpion\",\"photoUrls\":[\"MinisteredGallopingWhereinsoever\"],\"tags\":[{\"id\":0}],\"status\":\"available\"},{\"id\":9223372016900044064,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"fish\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900044070,\"category\":{\"id\":260658,\"name\":\"AbysmsVnfixeLyar\"},\"name\":\"doggie\",\"photoUrls\":[\"EntertainerFacetiousConcocted\"],\"tags\":[{\"id\":0}],\"status\":\"available\"},{\"id\":9223372016900044072,\"name\":\"Kitty\",\"photoUrls\":[],\"tags\":[],\"status\":\"available\"},{\"id\":9223372016900044080,\"category\":{\"id\":9223372016900043208,\"name\":\"MoutImperceptiblyRide\"},\"name\":\"doggie\",\"photoUrls\":[\"PrejudicesZizahHomeward\"],\"tags\":[{\"id\":0}],\"status\":\"available\"},{\"id\":9223372016900044083,\"category\":{\"id\":455,\"name\":\"RehobothRushesTestifying\"},\"name\":\"doggie\",\"photoUrls\":[\"CrusadersMtOutrageous\"],\"tags\":[{\"id\":0}],\"status\":\"available\"},{\"id\":9223372016900044089,\"category\":{\"id\":9223372016900043229,\"name\":\"StupidityGoutsChaise\"},\"name\":\"doggie\",\"photoUrls\":[\"SethEverydayishCogent\"],\"tags\":[{\"id\":0}],\"status\":\"available\"},{\"id\":9223372016900044094,\"category\":{\"id\":4104014353779409,\"name\":\"EverydayishImperceptiblySiedge\"},\"name\":\"doggie\",\"photoUrls\":[\"BimhalObelisksComplete\"],\"tags\":[{\"id\":0}],\"status\":\"available\"},{\"id\":9223372016900044097,\"category\":{\"id\":113506,\"name\":\"RefusethAforehandRabblement\"},\"name\":\"doggie\",\"photoUrls\":[\"LobtailingSolicitorForeign\"],\"tags\":[{\"id\":0}],\"status\":\"available\"},{\"id\":9223372016900044098,\"category\":{\"id\":9223372016900043201,\"name\":\"UndiscriminatingPetticoatRenegade\"},\"name\":\"doggie\",\"photoUrls\":[\"EfficacySelborneWilily\"],\"tags\":[{\"id\":0}],\"status\":\"available\"},{\"id\":2595536407496092,\"name\":\"\\u041c\\u043e\\u0442\\u043e\\u0446\\u0438\\u043a\\u043b \\u0421\\u043e\\u0446\\u0438\\u0430\\u043b\\u0438\\u0441\\u0442\\u0438\\u0447\\u0435\\u0441\\u043a\\u0438\\u0439\",\"photoUrls\":[\"https:\\\/\\\/img.freepik.com\\\/free-photo\\\/threat.jpg\"],\"tags\":[],\"status\":\"available\"},{\"id\":9223372016900044104,\"category\":{\"id\":11313377,\"name\":\"FreelyIntersticeLov\"},\"name\":\"doggie\",\"photoUrls\":[\"ChemickVnfixeMinuteness\"],\"tags\":[{\"id\":0}],\"status\":\"available\"},{\"id\":9223372016900044105,\"category\":{\"id\":9223372016900043240,\"name\":\"DanglingHeavingIntervention\"},\"name\":\"doggie\",\"photoUrls\":[\"VnfixeMajesticallyAforehand\"],\"tags\":[{\"id\":0}],\"status\":\"available\"},{\"id\":9223372016900044106,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"fish\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900044114,\"category\":{\"id\":0,\"name\":\"SpheresEnthusiasticUnpossessed\"},\"name\":\"doggie\",\"photoUrls\":[\"HazorDistinguishesThirteenth\"],\"tags\":[{\"id\":0}],\"status\":\"available\"},{\"id\":9223372016900044115,\"category\":{\"id\":11313377,\"name\":\"TroopCompellCrews\"},\"name\":\"doggie\",\"photoUrls\":[\"BargesSaridFreely\"],\"tags\":[{\"id\":0}],\"status\":\"available\"},{\"id\":9223372016900044116,\"category\":{\"id\":9223372016900043222,\"name\":\"CreamyUntwistingVoluminous\"},\"name\":\"doggie\",\"photoUrls\":[\"RelatedEntertainerIncurrest\"],\"tags\":[{\"id\":0}],\"status\":\"available\"},{\"id\":9223372016900044118,\"name\":\"Kitty\",\"photoUrls\":[],\"tags\":[],\"status\":\"available\"},{\"id\":9223372016900044119,\"name\":\"Kitty\",\"photoUrls\":[],\"tags\":[],\"status\":\"available\"},{\"id\":9223372016900044147,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"fish\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900044152,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"fish\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900044153,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"fish\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900044154,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"Puff\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900044155,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"doggie\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900044156,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"doggie\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900044157,\"name\":\"Kitty\",\"photoUrls\":[],\"tags\":[],\"status\":\"available\"},{\"id\":9223372016900044158,\"name\":\"Kitty\",\"photoUrls\":[],\"tags\":[],\"status\":\"available\"},{\"id\":280320023874,\"category\":{\"id\":0,\"name\":\"Scotland\"},\"name\":\"Twix\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900044162,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"fish\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900044165,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"fish\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900044166,\"name\":\"Kitty\",\"photoUrls\":[],\"tags\":[],\"status\":\"available\"},{\"id\":9223372016900044167,\"name\":\"Kitty\",\"photoUrls\":[],\"tags\":[],\"status\":\"available\"},{\"id\":9223372016900044168,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"fish\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900044169,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"fish\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900044170,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"fish\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":922337203685477590,\"category\":{\"id\":2,\"name\":\"dog\"},\"name\":\"doggie-yoggie\",\"photoUrls\":[],\"tags\":[],\"status\":\"available\"},{\"id\":40,\"category\":{\"id\":9,\"name\":\"dogs\"},\"name\":\"Lucky\",\"photoUrls\":[\"photo\"],\"tags\":[{\"id\":1,\"name\":\"pets\"}],\"status\":\"available\"},{\"id\":9223372016900044171,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"fish\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900044178,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"doggie\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900044199,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"fish\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900044200,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"fish\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900044201,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"Puff\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900044202,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"doggie\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900044203,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"doggie\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900044204,\"category\":{\"id\":0,\"name\":\"Jerry\"},\"name\":\"Mouse\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"Mouse\"}],\"status\":\"available\"},{\"id\":110,\"category\":{\"id\":115,\"name\":\"string\"},\"name\":\"doggie\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":120,\"name\":\"karabas\"},{\"id\":125,\"name\":\"thor\"}],\"status\":\"available\"},{\"id\":9223372016900044205,\"name\":\"siyaan\",\"photoUrls\":[],\"tags\":[],\"status\":\"available\"},{\"id\":15555,\"category\":{\"id\":0,\"name\":\"puppy\"},\"name\":\"doggie\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"Charlie\"}],\"status\":\"available\"},{\"id\":9223372016900044206,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"fish\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900044211,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"Puff\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900044235,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"fish\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900044243,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"doggie\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900044251,\"name\":\"Kitty\",\"photoUrls\":[],\"tags\":[],\"status\":\"available\"},{\"id\":9223372016900044253,\"name\":\"Kitty\",\"photoUrls\":[],\"tags\":[],\"status\":\"available\"},{\"id\":9223372016900044257,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"fish\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900044266,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"fish\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900044267,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"fish\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":8769403261925587,\"name\":\"\\u041f\\u0440\\u043e\\u043f\\u0430\\u0441\\u0442\\u044c \\u0420\\u0435\\u0437\\u0443\\u043b\\u044c\\u0442\\u0430\\u0442\",\"photoUrls\":[\"https:\\\/\\\/img.freepik.com\\\/free-photo\\\/recently.jpg\",\"https:\\\/\\\/img.freepik.com\\\/free-photo\\\/girl.jpg\",\"https:\\\/\\\/img.freepik.com\\\/free-photo\\\/wall.jpg\",\"https:\\\/\\\/img.freepik.com\\\/free-photo\\\/it.jpg\",\"https:\\\/\\\/img.freepik.com\\\/free-photo\\\/affect.jpg\"],\"tags\":[],\"status\":\"available\"},{\"id\":9223372016900044268,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"Puff\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900044269,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"doggie\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900044270,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"doggie\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900044271,\"name\":\"Kitty\",\"photoUrls\":[],\"tags\":[],\"status\":\"available\"},{\"id\":9223372016900044275,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"doggie\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900044276,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"fish\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900044277,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"fish\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900044281,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"fish\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900044288,\"name\":\"Kitty\",\"photoUrls\":[],\"tags\":[],\"status\":\"available\"},{\"id\":9223372016900044289,\"name\":\"Kitty\",\"photoUrls\":[],\"tags\":[],\"status\":\"available\"},{\"id\":9223372016900044294,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"doggie\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900044311,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"fish\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900044316,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"fish\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900044317,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"Puff\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900044318,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"doggie\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900044319,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"doggie\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900044320,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"doggie\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900044321,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"fish\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900044324,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"doggie\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900044325,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"fish\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900044326,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"doggie\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900044350,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"fish\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900044385,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"fish\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900044386,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"fish\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900044389,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"Puff\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900044390,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"doggie\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900044391,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"doggie\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900044398,\"name\":\"test pet name\",\"photoUrls\":[\"photo\\\/1701442036_IMG_20220730_143658.jpg\"],\"tags\":[],\"status\":\"available\"},{\"id\":9223372016900044399,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"fish\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900044400,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"fish\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900044401,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"fish\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900044403,\"name\":\"Kitty\",\"photoUrls\":[],\"tags\":[],\"status\":\"available\"},{\"id\":9223372016900044404,\"name\":\"Kitty\",\"photoUrls\":[],\"tags\":[],\"status\":\"available\"},{\"id\":9222968140497180179,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"test\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900044409,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"doggie\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900044410,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"doggie\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900044417,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"doggie\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900044418,\"category\":{\"id\":0,\"name\":\"puppy\"},\"name\":\"doggie\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"Charlie\"}],\"status\":\"available\"},{\"id\":9223372016900044422,\"name\":\"siyaan\",\"photoUrls\":[],\"tags\":[],\"status\":\"available\"},{\"id\":9223372016900044424,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"doggie\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900044425,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"fish\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900044432,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"doggie\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900044433,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"fish\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900044435,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"Puff\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900044440,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"doggie\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900044441,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"doggie\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900044442,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"doggie\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900044445,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"doggie\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900044446,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"doggie\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900044447,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"doggie\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900044448,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"fish\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":2577529887809450,\"name\":\"\\u042d\\u043a\\u0437\\u0430\\u043c\\u0435\\u043d \\u041b\\u0438\\u043b\\u043e\\u0432\\u044b\\u0439\",\"photoUrls\":[\"https:\\\/\\\/img.freepik.com\\\/free-photo\\\/arrive.jpg\",\"https:\\\/\\\/img.freepik.com\\\/free-photo\\\/certain.jpg\",\"https:\\\/\\\/img.freepik.com\\\/free-photo\\\/boy.jpg\"],\"tags\":[],\"status\":\"available\"},{\"id\":9223372016900044449,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"fish\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900044450,\"name\":\"test pet name\",\"photoUrls\":[\"photo\\\/1701442348_IMG_20220730_143658.jpg\"],\"tags\":[],\"status\":\"available\"},{\"id\":9223372016900044453,\"category\":{\"id\":0,\"name\":\"test\"},\"name\":\"doggie\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900044457,\"name\":\"test pet name\",\"photoUrls\":[\"photo\\\/1701442405_IMG_20220730_143658.jpg\"],\"tags\":[],\"status\":\"available\"},{\"id\":9223372016900044460,\"category\":{\"id\":0,\"name\":\"monkey\"},\"name\":\"Banana\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900044471,\"name\":\"test pet name\",\"photoUrls\":[\"photo\\\/1701442439_IMG_20220730_143658.jpg\"],\"tags\":[],\"status\":\"available\"},{\"id\":9223372016900044484,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"fish\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900044486,\"name\":\"test pet name\",\"photoUrls\":[\"photo\\\/1701442474_IMG_20220730_143658.jpg\"],\"tags\":[],\"status\":\"available\"},{\"id\":9223372016900044497,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"fish\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900044498,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"fish\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900044501,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"Puff\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900044503,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"doggie\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900044504,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"doggie\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900044509,\"category\":{\"id\":0,\"name\":\" \"},\"name\":\"doggie\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900044510,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"doggie\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900044511,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"doggie\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900044512,\"category\":{\"id\":0,\"name\":\"puppy\"},\"name\":\"doggie\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"Charlie\"}],\"status\":\"available\"},{\"id\":9223372016900044513,\"name\":\"siyaan\",\"photoUrls\":[],\"tags\":[],\"status\":\"available\"},{\"id\":9223372016900044514,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"fish\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900044515,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"fish\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900044516,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"fish\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900044517,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"fish\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900044521,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"doggie\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900044522,\"name\":\"test pet name\",\"photoUrls\":[\"photo\\\/1701442700_IMG_20220730_143658.jpg\"],\"tags\":[],\"status\":\"available\"},{\"id\":9223372016900044526,\"name\":\"test pet name\",\"photoUrls\":[\"photo\\\/1701442718_IMG_20220730_143658.jpg\"],\"tags\":[],\"status\":\"available\"},{\"id\":9223372016900044529,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"doggie\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900044530,\"name\":\"test pet name\",\"photoUrls\":[\"photo\\\/1701442730_IMG_20220730_143658.jpg\"],\"tags\":[],\"status\":\"available\"},{\"id\":9223372016900044538,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"fish\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900044539,\"category\":{\"id\":0,\"name\":\"string\"},\"name\":\"fish\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"string\"}],\"status\":\"available\"},{\"id\":9223372016900044540,\"name\":\"Kitty\",\"photoUrls\":[],\"tags\":[],\"status\":\"available\"}]}",
+                            "name": ""
+                        },
+                        {
+                            "header": [],
+                            "code": 422,
+                            "body": "{\"message\": \"API returned an Invalid Status Value error. Please contact the administrator.\"}",
+                            "name": "Invalid status value"
+                        }
+                    ]
+                },
+                {
+                    "name": "Store Pet",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/pet",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/pet"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"category\":\"Mammal\",\"name\":\"Doggie\",\"photoUrls\":[\"https:\\\/\\\/www.example.com\\\/doggie.jpg\"],\"tags\":[\"foo\"],\"status\":\"available\"}"
+                        },
+                        "description": "Store a new pet",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 422,
+                            "body": "{\"message\": \"API returned an Invalid Input error. Please correct the provided data and try again.\"}",
+                            "name": "Invalid Input"
+                        }
+                    ]
+                },
+                {
+                    "name": "Show Pet",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/pet\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/pet\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "1",
+                                    "description": "The ID of the pet to retrieve."
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "Display the information about a specific pet",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 404,
+                            "body": "{\"message\": \"Pet not found.\"}",
+                            "name": "Pet not found"
+                        },
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "x-ratelimit-limit",
+                                    "value": "60"
+                                },
+                                {
+                                    "key": "x-ratelimit-remaining",
+                                    "value": "58"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 404,
+                            "body": "{\n    \"message\": \"Pet not found\"\n}",
+                            "name": ""
+                        },
+                        {
+                            "header": [],
+                            "code": 422,
+                            "body": "{\"message\": \"API returned an Invalid ID error. Please contact the administrator.\"}",
+                            "name": "Invalid ID"
+                        }
+                    ]
+                },
+                {
+                    "name": "Update Pet",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/pet\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/pet\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "18",
+                                    "description": "The ID of the pet to update."
+                                }
+                            ]
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"category\":\"Mammal\",\"name\":\"Doggie\",\"photoUrls\":[\"https:\\\/\\\/www.example.com\\\/doggie.jpg\"],\"tags\":[\"foo\"],\"status\":\"available\"}"
+                        },
+                        "description": "Update a specific pet.\nNote: Full payload must be provided for both PUT and PATCH methods as they work exactly the same",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 404,
+                            "body": "{\"message\": \"Pet not found.\"}",
+                            "name": "Pet not found"
+                        },
+                        {
+                            "header": [],
+                            "code": 422,
+                            "body": "{\"message\": \"API returned an Invalid ID error. Please contact the administrator.\"}",
+                            "name": "Invalid ID"
+                        },
+                        {
+                            "header": [],
+                            "code": 422,
+                            "body": "{\"message\": \"API returned a Validation error. Please correct your input and try again.\"}",
+                            "name": "Validation Error"
+                        }
+                    ]
+                },
+                {
+                    "name": "Destroy Pet",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/pet\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/pet\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "19",
+                                    "description": "The ID of the pet to delete."
+                                }
+                            ]
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "Remove a specific pet",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Upload Pet Image",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/pet\/:id\/uploadImage",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/pet\/:id\/uploadImage",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "19",
+                                    "description": "The ID of the pet to upload an image for."
+                                }
+                            ]
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "multipart\/form-data"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": [
+                                {
+                                    "key": "file",
+                                    "src": [],
+                                    "type": "file"
+                                }
+                            ]
+                        },
+                        "description": "Upload an image for a specific pet",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Index PetStatuses",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/petStatus",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/petStatus"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "Get all available statuses",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "x-ratelimit-limit",
+                                    "value": "60"
+                                },
+                                {
+                                    "key": "x-ratelimit-remaining",
+                                    "value": "57"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 200,
+                            "body": "{\"data\":[\"available\",\"pending\",\"sold\"]}",
+                            "name": ""
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "auth": {
+        "type": "noauth"
+    }
+}
