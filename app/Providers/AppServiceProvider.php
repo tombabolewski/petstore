@@ -19,8 +19,8 @@ class AppServiceProvider extends ServiceProvider
 
             $client = Http::baseUrl(config('services.petstore.url'))
                 ->timeout(config('services.petstore.timeout', 10))
-                ->connectTimeout(config('services.petstore.connect_timeout', 2));
-                //->withToken(config('services.petstore.token'));
+                ->connectTimeout(config('services.petstore.connect_timeout', 2))
+                ->withToken(config('services.petstore.token'));
 
             return new PetService($client, resolve(PetNormalizerService::class));
         });
