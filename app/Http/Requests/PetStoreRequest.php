@@ -16,16 +16,12 @@ class PetStoreRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'category' => 'array',
-            'category.id' => 'integer',
-            'category.name' => 'string',
-            'name' => 'string',
+            'category' => 'string|nullable',
+            'name' => 'string|nullable',
             'photoUrls' => 'array',
-            'photoUrls.*' => 'string',
+            'photoUrls.*' => 'string|nullable',
             'tags' => 'array',
-            'tags.*' => 'array',
-            'tags.*.id' => 'integer',
-            'tags.*.name' => 'string',
+            'tags.*' => 'string|nullable',
             'status' => ['string', Rule::in(PetStatus::all())],
         ];
     }

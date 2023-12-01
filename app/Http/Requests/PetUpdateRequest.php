@@ -16,17 +16,12 @@ class PetUpdateRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'id' => 'integer|required',
-            'category' => 'array',
-            'category.id' => 'integer',
-            'category.name' => 'string|nullable',
+            'category' => 'string|nullable',
             'name' => 'string|nullable',
             'photoUrls' => 'array',
-            'photoUrls.*' => 'string',
+            'photoUrls.*' => 'string|nullable',
             'tags' => 'array',
-            'tags.*' => 'array',
-            'tags.*.id' => 'integer',
-            'tags.*.name' => 'string|nullable',
+            'tags.*' => 'string|nullable',
             'status' => ['string', Rule::in(PetStatus::all())],
         ];
     }

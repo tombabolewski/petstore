@@ -32,45 +32,55 @@ class PetController extends Controller
     public function store(PetStoreRequest $request): JsonResponse
     {
         $payload = $request->validated();
-        $this->petService->post($payload);
-        return response()->json(['message' => 'Pet created successfully'], 201);
+        $pet = $this->petService->post($payload);
+        return response()->json([
+            'message' => 'Pet created successfully',
+            'data' => $pet,
+        ], 201);
     }
 
     /**
      * Upload an image for a specific pet
      */
-    public function uploadImage(PetUploadImageRequest $request, int $id): JsonResponse
+    public function uploadImage(PetUploadImageRequest $request, string $id): JsonResponse
     {
         $file = $request->file('file');
-        $this->petService->uploadImage($id, $file);
-        return response()->json(['message' => 'Image uploaded successfully']);
+        $data = $this->petService->uploadImage((int)$id, $file);
+        return response()->json([
+            'message' => 'Image uploaded successfully',
+            'data' => $data,
+        ]);
     }
 
     /**
      * Display the information about a specific pet
      */
-    public function show(int $id)
+    public function show(string $id): JsonResponse
     {
-        $pet = $this->petService->get($id);
+        $pet = $this->petService->get((int)$id);
         return response()->json(['data' => $pet]);
     }
 
     /**
      * Update a specific pet
      */
-    public function update(PetUpdateRequest $request, int $id)
+    public function update(PetUpdateRequest $request, string $id): JsonResponse
     {
+        dd($request->all(), $request->validated());
         $payload = $request->validated();
-        $this->petService->put($id, $payload);
-        return response()->json(['message' => 'Pet updated successfully']);
+        $pet = $this->petService->put((int)$id, $payload);
+        return response()->json([
+            'message' => 'Pet updated successfully',
+            'data' => $pet,
+        ]);
     }
 
     /**
      * Remove a specific pet
      */
-    public function destroy(int $id)
+    public function destroy(string $id): JsonResponse
     {
-        $this->petService->delete($id);
+        $this->petService->delete((int)$id);
         return response()->json(['message' => 'Pet deleted successfully']);
     }
 }

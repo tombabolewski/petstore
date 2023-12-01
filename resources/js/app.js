@@ -18,8 +18,13 @@ const routes = [
         component: Pets,
     },
     {
-        path: '/pet/:pet_id',
+        path: '/pet/:id',
         name: 'pet',
+        component: Pet,
+    },
+    {
+        path: '/newPet',
+        name: 'newPet',
         component: Pet,
     },
 ];

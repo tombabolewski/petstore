@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\PetController;
+use App\Http\Controllers\PetStatusController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -17,3 +18,4 @@ use Illuminate\Support\Facades\Route;
 
 Route::apiResource('pet', PetController::class)->parameter('pet', 'id');
 Route::post('pet/{id}/uploadImage', [PetController::class, 'uploadImage'])->name('pet.uploadImage');
+Route::get('petStatus', [PetStatusController::class, 'index'])->name('petStatus.index');
